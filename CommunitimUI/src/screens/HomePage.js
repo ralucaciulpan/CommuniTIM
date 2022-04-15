@@ -1,6 +1,9 @@
-export default function HomePage(){
+import {StyleSheet,Text,View,Pressable} from 'react-native';
+import React from 'react';
+
+export default function HomePage({navigation}){
     return(
-      <View>
+      <View style = {styles.container}>
         <Text>
           This is the HomePage.
         </Text>
