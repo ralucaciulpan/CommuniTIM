@@ -2,6 +2,13 @@ import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button} from 'react-nat
 import React from 'react';
 
 export default function HomePage({navigation}){
+
+    const loginHandler = () =>{
+      navigation.navigate('screen_login')
+    }
+    const signupHandler = () =>{
+      
+    }
     return(
       <View style = {styles.container}>
         <View style = {styles.header}>
@@ -14,7 +21,9 @@ export default function HomePage({navigation}){
           <Text style={styles.welcome_text}>
             Fii la curent cu toate problemele din oraș.
           </Text >
-          <Pressable style = {styles.loginButton}>
+          <Pressable 
+          onPress={loginHandler}
+          style = {styles.loginButton}>
             <Text style = {styles.buttonText}>Intră în cont</Text>
           </Pressable>
           <Pressable>
