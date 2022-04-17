@@ -1,15 +1,16 @@
 
-import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button} from 'react-native';
+import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView} from 'react-native';
 import React from 'react';
 export default function LoginPage(){
     return(
         <View style = {styles.container}>
-            <View style = {styles.header}>
+            <SafeAreaView style = {styles.header}>
                 <Image 
-                    source={require('../utils/placeholderlogo.png')}
+                    style = {styles.logo}
+                    source={require('../utils/logo.png')}
                     resizeMode='stretch'
                 />
-            </View>
+            </SafeAreaView>
 
             <View style = {styles.footer}>
                 <Pressable>
@@ -26,9 +27,10 @@ const {height} = Dimensions.get('window');
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#9933ff',
+      backgroundColor: '#fff',
     },
     header:{
+      backgroundColor: '#ff9033',
       flex:1,
       justifyContent: 'center',
       alignItems:'center'
@@ -43,7 +45,6 @@ const {height} = Dimensions.get('window');
       alignItems:'center'
     },
     logo:{
-      height:logo_height,
-      width:logo_height,
+        marginBottom:250
     },
   });
