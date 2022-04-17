@@ -12,9 +12,11 @@ export default function LoginPage(){
             </View>
 
             <View style = {styles.footer}>
-                <Text>
-                    This is the footer.
-                </Text>
+                <Pressable>
+                    <Text>
+                        Go back
+                    </Text>
+                </Pressable>
             </View>
         </View>
     )
