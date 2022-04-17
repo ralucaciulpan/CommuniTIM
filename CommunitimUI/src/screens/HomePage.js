@@ -1,22 +1,25 @@
-import {StyleSheet,Text,View,Pressable,Image, Dimensions} from 'react-native';
+import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button} from 'react-native';
 import React from 'react';
 
 export default function HomePage({navigation}){
     return(
       <View style = {styles.container}>
         <View style = {styles.header}>
-          <Text>
-            
-          </Text>
           <Image 
             source={require('../utils/placeholderlogo.png')}
             resizeMode='stretch'
           />
         </View>
         <View style={styles.footer}>
-          <Text>
-            This is the footer.
-          </Text>
+          <Text style={styles.welcome_text}>
+            Fii la curent cu toate problemele din oraș.
+          </Text >
+          <Pressable style = {styles.loginButton}>
+            <Text style = {styles.buttonText}>Intră în cont</Text>
+          </Pressable>
+          <Pressable>
+            <Text style = {styles.signupText}>Nu ai cont încă? Creează unul.</Text>
+          </Pressable>
         </View>
       </View>
       
@@ -41,10 +44,36 @@ export default function HomePage({navigation}){
       borderTopLeftRadius: 30,
       borderTopRightRadius: 30,
       paddingVertical:50,
-      paddingHorizontal:30
+      paddingHorizontal:30,
+      alignItems:'center'
     },
     logo:{
       height:logo_height,
       width:logo_height,
+    },
+    welcome_text:{
+      fontSize:30,
+      fontWeight:'bold',
+    },
+    loginButton:{
+      marginTop:35,
+      alignItems:'center',
+      justifyContent:'center',
+      paddingVertical:12,
+      paddingHorizontal:32,
+      borderRadius:6,
+      elevation:3,
+      backgroundColor:"#9933ff"
+    },
+    buttonText:{
+      color:"#fff", 
+      fontWeight:'bold',
+      fontSize:20,
+    },
+    signupText:{
+      color:"#9933ff",
+      fontSize:15,
+      fontWeight:'700',
+      marginTop:20
     }
   });
