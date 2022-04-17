@@ -1,16 +1,17 @@
-import {StyleSheet,Text,View,Pressable} from 'react-native';
+import {StyleSheet,Text,View,Pressable,Image, Dimensions} from 'react-native';
 import React from 'react';
 
 export default function HomePage({navigation}){
     return(
       <View style = {styles.container}>
-        <Text>
-          This is the HomePage.
-        </Text>
         <View style = {styles.header}>
           <Text>
-            This is the header.
+            
           </Text>
+          <Image 
+            source={require('../utils/placeholderlogo.png')}
+            resizeMode='stretch'
+          />
         </View>
         <View style={styles.footer}>
           <Text>
@@ -22,6 +23,8 @@ export default function HomePage({navigation}){
     )
   }
 
+  const {height} = Dimensions.get('window');
+  const logo_height = height*0.28;
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -40,4 +43,8 @@ export default function HomePage({navigation}){
       paddingVertical:50,
       paddingHorizontal:30
     },
+    logo:{
+      height:logo_height,
+      width:logo_height,
+    }
   });
