@@ -1,7 +1,9 @@
 
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView} from 'react-native';
 import React from 'react';
+import { TextInput } from 'react-native';
 export default function LoginPage(){
+    const [text, setText] = React.useState("");
     return(
         <View style = {styles.container}>
             <SafeAreaView style = {styles.header}>
@@ -13,12 +15,25 @@ export default function LoginPage(){
             </SafeAreaView>
 
             <View style = {styles.footer}>
-                <Pressable>
                 <Text style={styles.welcome_text}>
                     Bine ai venit pe CommuniTIM!
                 </Text >
-                </Pressable>
+                <Text style={styles.fieldText}>Username:</Text>
+                <TextInput
+                style={styles.usernameField}
+                placeholder='username'
+                />
+                <Text style={styles.fieldText}>Password:</Text>
+                <TextInput
+                style={styles.passwordField}
+                placeholder='password'
+                />
+               
             </View>
+
+            
+
+           
         </View>
     )
 }
@@ -50,5 +65,28 @@ const {height} = Dimensions.get('window');
     welcome_text:{
         fontSize:30,
         fontWeight:'bold',
+        marginBottom:70
       },
+      usernameField:{
+        fontSize:20,
+        paddingBottom:70
+        
+      },
+      passwordField:{
+        fontSize:20,
+        borderTopLeftRadius:50
+      },
+      fieldContainer:{
+          borderLeftWidth:4,
+          borderRightWidth:4,
+          borderTopWidth:4,
+          borderBottomWidth:4,
+      },
+      fieldText:{
+          color:'#696969',
+          fontSize:20,
+          fontWeight:'bold',
+          marginBottom:15,
+          alignSelf: 'flex-start'
+      }
   });
