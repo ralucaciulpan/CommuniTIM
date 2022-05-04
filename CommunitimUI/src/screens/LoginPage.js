@@ -14,9 +14,9 @@ export default function LoginPage(){
 
             <View style = {styles.footer}>
                 <Pressable>
-                    <Text>
-                        Go back
-                    </Text>
+                <Text style={styles.welcome_text}>
+                    Bine ai venit pe CommuniTIM!
+                </Text >
                 </Pressable>
             </View>
         </View>
@@ -30,7 +30,7 @@ const {height} = Dimensions.get('window');
       backgroundColor: '#fff',
     },
     header:{
-      backgroundColor: '#ff9033',
+      backgroundColor: '#fff',
       flex:1,
       justifyContent: 'center',
       alignItems:'center'
@@ -47,4 +47,8 @@ const {height} = Dimensions.get('window');
     logo:{
         marginBottom:250
     },
+    welcome_text:{
+        fontSize:30,
+        fontWeight:'bold',
+      },
   });
