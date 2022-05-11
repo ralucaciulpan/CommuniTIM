@@ -13,7 +13,7 @@ export default function SignupPage(){
 
             <SafeAreaView style={styles.footer}>
                 <Text style={styles.welcome_text}>
-                    Bine ai venit pe CommuniTIM!
+                    Creează un cont.
                 </Text>
                 <Text style = {styles.fieldText}>username:</Text>
                 <View style = {styles.usernameFieldContainer}>
@@ -38,6 +38,12 @@ export default function SignupPage(){
                     placeholder='...'
                     />
                 </View>
+
+                <Pressable style = {styles.loginButton}
+                
+                >
+                    <Text style = {styles.buttonText}>Creează</Text>
+                </Pressable>
             </SafeAreaView>
         </View>
     )
@@ -70,7 +76,8 @@ export default function SignupPage(){
     welcome_text:{
         fontSize:30,
         fontWeight:'bold',
-        marginBottom:30
+        marginBottom:30,
+        color:"#000"
       },
       usernameField:{
         fontSize:20,
@@ -113,5 +120,20 @@ export default function SignupPage(){
           fontWeight:'bold',
           marginBottom:15,
           alignSelf: 'flex-start'
-      }
+      },
+      loginButton:{
+        marginTop:35,
+        alignItems:'center',
+        justifyContent:'center',
+        paddingVertical:12,
+        paddingHorizontal:32,
+        borderRadius:6,
+        elevation:3,
+        backgroundColor:"#9933ff"
+      },
+      buttonText:{
+        color:"#fff", 
+        fontWeight:'bold',
+        fontSize:20,
+      },
 })
