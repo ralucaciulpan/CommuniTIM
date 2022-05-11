@@ -18,26 +18,26 @@ export default function LoginPage(){
                 <Text style={styles.welcome_text}>
                     Bine ai venit pe CommuniTIM!
                 </Text >
-                <Text style={styles.fieldText}>Username:</Text>
-                <TextInput
-                style={styles.usernameField}
-                placeholder='username'
-                />
-                <Text style={styles.fieldText}>Password:</Text>
-                <TextInput
-                style={styles.passwordField}
-                placeholder='password'
-                />
-               
-            </View>
-
-            
-
-           
-        </View>
+                <Text style = {styles.fieldText}>utilizator:</Text>
+                <View style = {styles.usernameFieldContainer}>
+                    <TextInput
+                    style={styles.usernameField}
+                    placeholder='...'
+                    />
+                </View>
+                <Text style = {styles.fieldText}>parolă:</Text>
+                <View style = {styles.passwordFieldContainer}>
+                    <TextInput
+                    style={styles.passwordField}
+                    placeholder='...'
+                    />
+                </View>
+              </View>
+          </View>
     )
 }
-const {height} = Dimensions.get('window');
+  const {height} = Dimensions.get('window');
+  const windowWidth = Dimensions.get('window').width;
   const logo_height = height*0.28;
   const styles = StyleSheet.create({
     container: {
@@ -69,19 +69,28 @@ const {height} = Dimensions.get('window');
       },
       usernameField:{
         fontSize:20,
-        paddingBottom:70
-        
       },
       passwordField:{
         fontSize:20,
         borderTopLeftRadius:50
       },
-      fieldContainer:{
-          borderLeftWidth:4,
-          borderRightWidth:4,
-          borderTopWidth:4,
-          borderBottomWidth:4,
-      },
+      usernameFieldContainer:{
+        borderLeftWidth:3,
+        borderRightWidth:3,
+        borderTopWidth:3,
+        borderBottomWidth:3,
+        width:windowWidth-50,
+        height:50,
+        marginBottom:50
+    },
+      passwordFieldContainer:{
+        borderLeftWidth:3,
+        borderRightWidth:3,
+        borderTopWidth:3,
+        borderBottomWidth:3,
+        width:windowWidth-50,
+        height:50
+     },
       fieldText:{
           color:'#696969',
           fontSize:20,
