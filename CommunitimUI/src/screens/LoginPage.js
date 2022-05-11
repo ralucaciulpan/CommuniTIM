@@ -32,6 +32,10 @@ export default function LoginPage(){
                     placeholder='...'
                     />
                 </View>
+                <Pressable style = {styles.loginButton}
+                >
+                    <Text style = {styles.buttonText}>loghează-te</Text>
+                </Pressable>
               </View>
           </View>
     )
@@ -65,7 +69,7 @@ export default function LoginPage(){
     welcome_text:{
         fontSize:30,
         fontWeight:'bold',
-        marginBottom:70
+        marginBottom:40
       },
       usernameField:{
         fontSize:20,
@@ -92,10 +96,25 @@ export default function LoginPage(){
         height:50
      },
       fieldText:{
-          color:'#696969',
-          fontSize:20,
-          fontWeight:'bold',
-          marginBottom:15,
-          alignSelf: 'flex-start'
+        color:'#696969',
+        fontSize:20,
+        fontWeight:'bold',
+        marginBottom:15,
+        alignSelf: 'flex-start'
+      },
+      loginButton:{
+        marginTop:50,
+        alignItems:'center',
+        justifyContent:'center',
+        paddingVertical:12,
+        paddingHorizontal:32,
+        borderRadius:6,
+        elevation:3,
+        backgroundColor:"#9933ff"
+      },
+      buttonText:{
+        color:"#fff", 
+        fontWeight:'bold',
+        fontSize:20,
       }
   });
