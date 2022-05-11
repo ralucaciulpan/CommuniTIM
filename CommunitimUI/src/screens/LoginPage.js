@@ -1,7 +1,6 @@
 
-import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView} from 'react-native';
-import React from 'react';
-import { TextInput } from 'react-native';
+import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
+import React, {useState} from 'react';
 export default function LoginPage(){
     const [text, setText] = React.useState("");
     return(
@@ -30,6 +29,7 @@ export default function LoginPage(){
                     <TextInput
                     style={styles.passwordField}
                     placeholder='...'
+                    secureTextEntry
                     />
                 </View>
                 <Pressable style = {styles.loginButton}
