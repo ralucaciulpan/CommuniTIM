@@ -73,27 +73,37 @@ export default function LoginPage(){
       },
       usernameField:{
         fontSize:20,
+        color:'#696969',
+        marginLeft:10,
+        marginTop:8
       },
       passwordField:{
         fontSize:20,
-        borderTopLeftRadius:50
+        borderTopLeftRadius:50,
+        color:'#696969',
+        marginLeft:10,
+        marginTop:8
       },
       usernameFieldContainer:{
         borderLeftWidth:3,
         borderRightWidth:3,
         borderTopWidth:3,
         borderBottomWidth:3,
+        borderRadius:8,
         width:windowWidth-50,
         height:50,
-        marginBottom:50
+        marginBottom:50,
+        borderColor:'#696969'
     },
       passwordFieldContainer:{
         borderLeftWidth:3,
         borderRightWidth:3,
         borderTopWidth:3,
         borderBottomWidth:3,
+        borderRadius:8,
         width:windowWidth-50,
-        height:50
+        height:50,
+        borderColor:'#696969'
      },
       fieldText:{
         color:'#696969',
