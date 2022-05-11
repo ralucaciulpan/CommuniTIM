@@ -4,11 +4,15 @@ export default function SignupPage(){
     return(
         <View style= {styles.container}>
             <SafeAreaView style={styles.header}>
-
+                <Image 
+                    style={styles.logo}
+                    source={require('../utils/placeholderlogo.png')}
+                    resizeMode='stretch'
+                />
             </SafeAreaView>
 
             <SafeAreaView style={styles.footer}>
-                
+
             </SafeAreaView>
         </View>
     )
@@ -35,5 +39,8 @@ const {height} = Dimensions.get('window');
       paddingVertical:50,
       paddingHorizontal:30,
       alignItems:'center'
+    },
+    logo:{
+        marginBottom:25
     }
 })
