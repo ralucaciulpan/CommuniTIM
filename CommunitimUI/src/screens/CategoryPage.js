@@ -21,6 +21,18 @@ export default function CategoryPage(){
                 </Pressable>
             </View>
 
+            <View style={styles.buttonsContainer}>
+                <Pressable>
+                    <Text style = {styles.buttonText}>categorie</Text>
+                </Pressable>
+            </View>
+
+            <View style={styles.buttonsContainer}>
+                <Pressable>
+                    <Text style = {styles.buttonText}>alta categorie</Text>
+                </Pressable>
+            </View>
+
         </View>
 
 
