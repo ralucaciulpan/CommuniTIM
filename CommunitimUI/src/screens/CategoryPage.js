@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
     },
 
     category_text:{
-        marginTop: 90,
+        marginTop: 100,
+        marginBottom: 40,
         alignSelf: 'center',
         fontSize:35,
         fontWeight:'bold',
@@ -55,8 +56,8 @@ const styles = StyleSheet.create({
    buttonsContainer:{
         borderColor:'#9933ff',
         borderWidth: 3,
-        marginLeft: 15,
-        marginRight: 15,
+        marginLeft: 20,
+        marginRight: 20,
         marginTop: 40,
         borderRadius: 8
    },
@@ -64,7 +65,7 @@ const styles = StyleSheet.create({
    buttonText:{
        fontSize:35,
        alignSelf:'center',
-       marginTop: 10,
-       marginBottom: 10
+       marginTop: 25,
+       marginBottom: 25
    } 
 });
