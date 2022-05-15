@@ -10,7 +10,24 @@ export default function ActionPage(){
                 </Text>
             </View>
             <View style={styles.body}>
+                <View style={styles.div1}>
+                    <View style={styles.div1button1}>
+                        
+                    </View>
 
+                    <View style={styles.div1button2}>
+
+                    </View>
+
+                </View>
+                <View style={styles.div2}>
+                    <View style={styles.div2button1}></View>
+                    <View style={styles.div2button2}></View>
+                </View>
+                <View style={styles.div3}>
+                    <View style={styles.div3button1}></View>
+                    <View style={styles.div3button2}></View>    
+                </View>
             </View>
         </View>
     )
@@ -19,6 +36,7 @@ export default function ActionPage(){
 const styles = StyleSheet.create({
     container:{
         flex:1,
+        backgroundColor:"#fff"
     },
     header:{
         flex:1,
@@ -33,6 +51,64 @@ const styles = StyleSheet.create({
     },
     body:{
         flex:4,
-        backgroundColor:'#302',
+    },
+    div1:{
+        flex:2,
+        flexDirection:"row",
+        backgroundColor:"#fff"
+    },
+    div2:{
+        flex:2,
+        flexDirection:"row",
+        backgroundColor:"#fff"
+    },
+    div3:{
+        flex:2,
+        flexDirection:"row"
+    },
+    div1button1:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    div1button2:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    div2button1:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    div2button2:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    div3button1:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    div3button2:{
+        flex:1,
+        backgroundColor:"#fff",
+        borderWidth:5,
+        margin:5
+    },
+    plus:{
+        resizeMode:'stretch',
+    },
+    plusText:{
+        fontWeight:'bold',
+        fontSize:15,
+        marginBottom:25,
+        alignSelf:'center'
     }
 })
