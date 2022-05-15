@@ -7,7 +7,7 @@ export default function HomePage({navigation}){
       navigation.navigate('screen_login')
     }
     const signupHandler = () =>{
-      
+      navigation.navigate('screen_signup')
     }
     return(
       <View style = {styles.container}>
@@ -26,7 +26,10 @@ export default function HomePage({navigation}){
           style = {styles.loginButton}>
             <Text style = {styles.buttonText}>Intră în cont</Text>
           </Pressable>
-          <Pressable>
+          <Pressable 
+            onPress={signupHandler}
+          >
+            
             <Text style = {styles.signupText}>Nu ai cont încă? Creează unul.</Text>
           </Pressable>
         </View>
