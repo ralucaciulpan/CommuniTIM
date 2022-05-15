@@ -24,12 +24,19 @@ export default function ActionPage(){
                             style={styles.settings}
                             source={require('../utils/settings.png')}
                         />
-                        <Text style={styles.settingsText}>Setările contului.</Text>
+                        <Text style={styles.settingsText}>Setările contului</Text>
                     </View>
 
                 </View>
                 <View style={styles.div2}>
-                    <View style={styles.div2button1}></View>
+                    <View style={styles.div2button1}>
+                         <Image 
+                            style={styles.roads}
+                            source={require('../utils/road.png')}
+                        />
+                        <Text style={styles.roadsText}>Vezi probleme existente cu drumurile</Text>
+
+                    </View>
                     <View style={styles.div2button2}></View>
                 </View>
                 <View style={styles.div3}>
@@ -79,7 +86,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#fff",
         borderWidth:5,
         margin:4,
-        alignItems:'center'
+        alignItems:'center',
     },
     div1button2:{
         flex:1,
@@ -92,25 +99,29 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:4
+        margin:4,
+        alignItems:'center',
     },
     div2button2:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:4
+        margin:4,
+        alignItems:'center',
     },
     div3button1:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:4
+        margin:4,
+        alignItems:'center',
     },
     div3button2:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:4,
-        margin:5
+        margin:4,
+        alignItems:'center',
     },
     plus:{
         resizeMode:'stretch',
@@ -131,5 +142,16 @@ const styles = StyleSheet.create({
         fontSize:15,
         marginTop:25,
         alignSelf:'center'
+    },
+    roads:{
+        resizeMode:'stretch',
+        marginTop:25
+    },
+    roadsText:{
+        fontWeight:'bold',
+        fontSize:15,
+        marginTop:25,
+        alignSelf:'center',
+        textAlign:'center'
     }
 })
