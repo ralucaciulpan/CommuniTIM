@@ -20,7 +20,11 @@ export default function ActionPage(){
                     </View>
 
                     <View style={styles.div1button2}>
-
+                        <Image 
+                            style={styles.settings}
+                            source={require('../utils/settings.png')}
+                        />
+                        <Text style={styles.settingsText}>Setările contului.</Text>
                     </View>
 
                 </View>
@@ -81,7 +85,8 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:4
+        margin:4,
+        alignItems:'center'
     },
     div2button1:{
         flex:1,
@@ -112,6 +117,16 @@ const styles = StyleSheet.create({
         marginTop:25
     },
     plusText:{
+        fontWeight:'bold',
+        fontSize:15,
+        marginTop:25,
+        alignSelf:'center'
+    },
+    settings:{
+        resizeMode:'stretch',
+        marginTop:25
+    },
+    settingsText:{
         fontWeight:'bold',
         fontSize:15,
         marginTop:25,
