@@ -12,7 +12,11 @@ export default function ActionPage(){
             <View style={styles.body}>
                 <View style={styles.div1}>
                     <View style={styles.div1button1}>
-                        
+                        <Image 
+                            style={styles.plus}
+                            source={require('../utils/plusSign.png')}
+                        />
+                        <Text style={styles.plusText}>Raportează o problemă</Text>
                     </View>
 
                     <View style={styles.div1button2}>
@@ -55,7 +59,7 @@ const styles = StyleSheet.create({
     div1:{
         flex:2,
         flexDirection:"row",
-        backgroundColor:"#fff"
+        backgroundColor:"#fff",
     },
     div2:{
         flex:2,
@@ -70,45 +74,47 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:5
+        margin:4,
+        alignItems:'center'
     },
     div1button2:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:5
+        margin:4
     },
     div2button1:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:5
+        margin:4
     },
     div2button2:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:5
+        margin:4
     },
     div3button1:{
         flex:1,
         backgroundColor:"#fff",
         borderWidth:5,
-        margin:5
+        margin:4
     },
     div3button2:{
         flex:1,
         backgroundColor:"#fff",
-        borderWidth:5,
+        borderWidth:4,
         margin:5
     },
     plus:{
         resizeMode:'stretch',
+        marginTop:25
     },
     plusText:{
         fontWeight:'bold',
         fontSize:15,
-        marginBottom:25,
+        marginTop:25,
         alignSelf:'center'
     }
 })
