@@ -6,12 +6,12 @@ export default function SignupPage(){
             <SafeAreaView style={styles.header}>
                 <Image 
                     style={styles.logo}
-                    source={require('../utils/placeholderlogo.png')}
+                    source={require('../utils/logo.png')}
                     resizeMode='stretch'
                 />
             </SafeAreaView>
 
-            <SafeAreaView style={styles.footer}>
+            <View style={styles.footer}>
                 <Text style={styles.welcome_text}>
                     Creează un cont.
                 </Text>
@@ -41,11 +41,10 @@ export default function SignupPage(){
                 </View>
 
                 <Pressable style = {styles.loginButton}
-                
                 >
                     <Text style = {styles.buttonText}>Creează</Text>
                 </Pressable>
-            </SafeAreaView>
+            </View>
         </View>
     )
 }
@@ -69,7 +68,7 @@ export default function SignupPage(){
       borderTopRightRadius: 30,
       paddingVertical:50,
       paddingHorizontal:30,
-      alignItems:'center'
+      alignItems:'center',
     },
     logo:{
         marginBottom:25
@@ -119,11 +118,11 @@ export default function SignupPage(){
         borderRadius:8
     },
       fieldText:{
-          color:'#000',
+          color:'#696969',
           fontSize:15,
           fontWeight:'bold',
           marginBottom:15,
-          alignSelf: 'flex-start'
+          alignSelf:'flex-start'
       },
       loginButton:{
         marginTop:35,
