@@ -15,7 +15,7 @@ export default function SignupPage(){
                 <Text style={styles.welcome_text}>
                     Creează un cont.
                 </Text>
-                <Text style = {styles.fieldText}>username:</Text>
+                <Text style = {styles.fieldText}>utilizator:</Text>
                 <View style = {styles.usernameFieldContainer}>
                     <TextInput
                     style={styles.usernameField}
@@ -23,11 +23,12 @@ export default function SignupPage(){
                     />
                 </View>
 
-                <Text style = {styles.fieldText}>password:</Text>
+                <Text style = {styles.fieldText}>parolă:</Text>
                 <View style = {styles.passwordFieldContainer}>
                     <TextInput
                     style={styles.passwordField}
                     placeholder='...'
+                    secureTextEntry
                     />
                 </View>
 
@@ -93,7 +94,8 @@ export default function SignupPage(){
           borderColor:'#696969',
           width:windowWidth-50,
           height:40,
-          marginBottom:25
+          marginBottom:25,
+          borderRadius:8
       },
       passwordFieldContainer:{
         borderLeftWidth:3,
@@ -103,7 +105,8 @@ export default function SignupPage(){
         borderColor:'#696969',
         width:windowWidth-50,
         height:40,
-        marginBottom:25
+        marginBottom:25,
+        borderRadius:8
     },
     mailFieldContainer:{
         borderLeftWidth:3,
@@ -112,7 +115,8 @@ export default function SignupPage(){
         borderBottomWidth:3,
         borderColor:'#696969',
         width:windowWidth-50,
-        height:40
+        height:40,
+        borderRadius:8
     },
       fieldText:{
           color:'#000',
