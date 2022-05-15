@@ -3,8 +3,8 @@ import React, {useState} from 'react';
 export default function CategoryPage(){
     return (
         <View>
-            <Text>
-                This is the category page.
+            <Text style={styles.category_text}>
+                Selectează categoria:
             </Text>
         </View>
 
@@ -12,3 +12,12 @@ export default function CategoryPage(){
 
     )
 }
+const styles = StyleSheet.create({
+    category_text:{
+        marginTop: 90,
+        alignSelf: 'center',
+        fontSize:35,
+        fontWeight:'bold',
+        color: "#9933ff"
+    }
+});
