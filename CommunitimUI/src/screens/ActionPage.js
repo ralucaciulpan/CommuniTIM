@@ -37,7 +37,14 @@ export default function ActionPage(){
                         <Text style={styles.roadsText}>Vezi probleme existente cu drumurile</Text>
 
                     </View>
-                    <View style={styles.div2button2}></View>
+                    <View style={styles.div2button2}>
+                        <Image 
+                            style={styles.streetLamp}
+                            source={require('../utils/streetLamp.png')}
+                        />
+                        <Text style={styles.streetLampText}>Vezi probleme existente cu iluminarea stradală</Text>
+
+                    </View>
                 </View>
                 <View style={styles.div3}>
                     <View style={styles.div3button1}></View>
@@ -148,6 +155,17 @@ const styles = StyleSheet.create({
         marginTop:25
     },
     roadsText:{
+        fontWeight:'bold',
+        fontSize:15,
+        marginTop:25,
+        alignSelf:'center',
+        textAlign:'center'
+    },
+    streetLamp:{
+        resizeMode:'stretch',
+        marginTop:25
+    },
+    streetLampText:{
         fontWeight:'bold',
         fontSize:15,
         marginTop:25,
