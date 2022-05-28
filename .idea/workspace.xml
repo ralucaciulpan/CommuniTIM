@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="308cf16e-a3ba-4556-80b5-10b3f37fb503" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +58,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "dc2b3e0430bc8fdc9d888b9813ac5c8a"
   }
 }]]></component>
@@ -118,7 +119,7 @@
       <workItem from="1653762750541" duration="9000" />
       <workItem from="1653762778664" duration="2326000" />
       <workItem from="1653768873069" duration="568000" />
-      <workItem from="1653769782022" duration="246000" />
+      <workItem from="1653769782022" duration="1444000" />
     </task>
     <servers />
   </component>
