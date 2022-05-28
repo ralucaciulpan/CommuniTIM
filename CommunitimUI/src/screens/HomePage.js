@@ -1,6 +1,6 @@
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button} from 'react-native';
 import React from 'react';
-
+ 
 export default function HomePage({navigation}){
 
     const loginHandler = () =>{
