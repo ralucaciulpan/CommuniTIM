@@ -3,10 +3,29 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="308cf16e-a3ba-4556-80b5-10b3f37fb503" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/shared/layout/password/password-strength-bar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rr/communitim/web/rest/UserJWTControllerIT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CommunitimUI/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/CommunitimUI/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/CommunitimApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/CommunitimApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +47,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -42,16 +60,42 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/communitim" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommuniTimApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="communi-tim" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="rr.communitim.CommuniTimApp" />
+      <module name="communitim" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rr.communitim.CommunitimApplication" />
+      <option name="VM_PARAMETERS" value="$JDKPath$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <envs>
+        <env name="JAVA_HOME" value="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home/bin" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,6 +122,9 @@
       <workItem from="1649716920293" duration="1138000" />
       <workItem from="1652819992476" duration="1797000" />
       <workItem from="1653755644958" duration="1696000" />
+      <workItem from="1653761895022" duration="823000" />
+      <workItem from="1653762750541" duration="9000" />
+      <workItem from="1653762778664" duration="1664000" />
     </task>
     <servers />
   </component>
@@ -94,5 +141,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="25" width="1071" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653764356885">
+      <screen x="0" y="25" width="1440" height="802" />
+    </state>
+    <state x="184" y="25" width="1071" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764356885" />
+    <state x="507" y="135" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1653764275657">
+      <screen x="0" y="25" width="1440" height="802" />
+    </state>
+    <state x="507" y="135" key="#com.intellij.ide.macro.MacrosDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764275657" />
+    <state x="402" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1653762989085">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="402" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1653762989085" />
+    <state x="402" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.1440.802@0.25.1440.802" timestamp="1653762207673" />
+    <state x="576" y="155" key="EnvironmentVariablesDialog" timestamp="1653764283282">
+      <screen x="0" y="25" width="1440" height="802" />
+    </state>
+    <state x="576" y="155" key="EnvironmentVariablesDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764283282" />
+    <state x="208" y="25" key="SettingsEditor" timestamp="1653764469160">
+      <screen x="0" y="25" width="1440" height="802" />
+    </state>
+    <state x="208" y="25" key="SettingsEditor/0.25.1440.802@0.25.1440.802" timestamp="1653764469160" />
   </component>
 </project>

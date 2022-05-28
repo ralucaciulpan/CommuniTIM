@@ -19,21 +19,18 @@ export default function App() {
          }
        }>
 
+      <Stack.Screen 
+        name="screen_home"
+        component = {HomePage}
+       />
          <Stack.Screen
         name="screen_category"
         component={CategoryPage}
        />
-       
        <Stack.Screen
         name="screen_action"
         component={ActionPage}
        />
-
-       <Stack.Screen 
-        name="screen_home"
-        component = {HomePage}
-       />
-
       <Stack.Screen 
          name="screen_login"
          component={LoginPage}
