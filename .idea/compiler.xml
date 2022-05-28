@@ -7,14 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="communitim" />
+        <module name="CommuniTIM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="communitim" target="18" />
+      <module name="CommuniTIM" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CommuniTIM" options="-parameters" />
       <module name="communitim" options="-parameters" />
     </option>
   </component>
