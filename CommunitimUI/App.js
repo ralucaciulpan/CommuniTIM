@@ -17,8 +17,7 @@ export default function App() {
            headerShown:false
          }
        }>
-       
-       <Stack.Screen
+         <Stack.Screen
         name="screen_category"
         component={CategoryPage}
        />
