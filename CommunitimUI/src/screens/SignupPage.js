@@ -1,6 +1,9 @@
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView,TextInput} from 'react-native';
-import React from 'react';
+import React ,{useState} from 'react';
 export default function SignupPage(){
+    const [name,onChangeName] = useState("");
+    const [password,onChangePassword] = useState("");
+    const [email,onChangeEmail] = useState("");
     return(
         <View style= {styles.container}>
             <SafeAreaView style={styles.header}>
@@ -20,6 +23,8 @@ export default function SignupPage(){
                     <TextInput
                     style={styles.usernameField}
                     placeholder='...'
+                    onChangeText={onChangeName}
+                    value={name}
                     />
                 </View>
 
@@ -29,6 +34,8 @@ export default function SignupPage(){
                     style={styles.passwordField}
                     placeholder='...'
                     secureTextEntry
+                    onChangeText={onChangePassword}
+                    value={password}
                     />
                 </View>
 
@@ -37,6 +44,8 @@ export default function SignupPage(){
                     <TextInput
                     style={styles.passwordField}
                     placeholder='...'
+                    onChangeText={onChangeEmail}
+                    value={email}
                     />
                 </View>
 
@@ -44,6 +53,7 @@ export default function SignupPage(){
                 >
                     <Text style = {styles.buttonText}>Creează</Text>
                 </Pressable>
+                <Text> {name} {password} {email}</Text>
             </View>
         </View>
     )
