@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="communitim" target="18" />
-      <module name="CommuniTIM" target="18" />
+      <module name="CommuniTIM" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -2,8 +2,10 @@ package com.rr.communitim.service;
 
 import com.rr.communitim.model.User;
 import com.rr.communitim.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -15,19 +17,22 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User registerUser(String username, String password, String email){
-        if(username != null && password != null){
-            User user = new User();
-            user.setUsername(username);
-            user.setPassword(password);
-            user.setEmail(email);
+    public User registerUser(User user){
+        if(user.getUsername() != null && user.getPassword() != null){
             return userRepository.save(user);
         }
         else
-            return null;
+        {
+            User errorUser = new User("Error Name","Error password","Error muie");
+            return userRepository.save(errorUser);
+        }
     }
 
     public User loginUser(String username, String password){
         return userRepository.findByUsernameAndPassword(username, password).orElse(null);
+    }
+
+    public List<User> getUsers() {
+        return userRepository.findAll();
     }
 }
