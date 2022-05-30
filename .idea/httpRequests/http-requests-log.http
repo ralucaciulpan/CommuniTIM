@@ -1,0 +1,548 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "n hjn",
+  "password": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T223627.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+<> 2022-05-29T223314.500.json
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T223311.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+<> 2022-05-29T223301.500.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+<> 2022-05-29T223159.500.json
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T223156.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T222413.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T222358.200.json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+<> 2022-05-29T222329.404.json
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T222201.200.json
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T222141.200.json
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+PUT http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+<> 2022-05-29T221640.405.json
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 12,
+  "username": "n hjn",
+  "passowrd": "asddasdasda",
+  "email": "dasadda"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "n hjn",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+
+<> 2022-05-29T221400.400.json
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "id": 3,
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+Content-Type: application/json
+
+{
+  "username": "dana",
+  "passowrd": "paroladana",
+  "email": "emaildana"
+}
+
+###
+
+POST http://localhost:8080/users/adduser
+
+Content-Type: application/json
+
+{
+  "username": "axadsad",
+  "password": "adadads",
+  "email": "indiana.jones"
+}
+
+<> 2022-05-29T221012.415.json
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "username": "axadsad",
+  "password": "adadads",
+  "email": "indiana.jones"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "indiana",
+  "password": "jones",
+  "email": "indiana.jones"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-05-29T220513.200.json
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+<> 2022-05-29T220449.500.json
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+{:
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}:
+
+<> 2022-05-29T215623.400.html
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+<> 2022-05-29T215516.400.json
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+
+POST http://localhost:8080/users/users/adduser
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "email"
+}
+
+###
+

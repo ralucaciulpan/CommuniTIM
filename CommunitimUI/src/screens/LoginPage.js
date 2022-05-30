@@ -1,8 +1,30 @@
 
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
-export default function LoginPage(){
-    const [text, setText] = React.useState("");
+import axios from "axios";
+export default function LoginPage({navigation}){
+  const [name,onChangeName] = useState("");
+  const [password,onChangePassword] = useState("");
+
+  const goToActionPage = () =>{
+    navigation.navigate('screen_action');
+  }
+  const submitCredentials = async (event) =>{
+    try {
+      const response = await axios.post('http://192.168.0.213:8080/users/login', {
+        username:name,
+        password:password
+      });
+      if (response.status === 200) {
+        alert("You have logged in succesfully.");
+        goToActionPage();
+      } else {
+        throw new Error("An error has occurred");
+      }
+    } catch (error) {
+      alert("Username or password incorrect");
+    }
+  };
     return(
         <View style = {styles.container}>
             <SafeAreaView style = {styles.header}>
@@ -22,6 +44,8 @@ export default function LoginPage(){
                     <TextInput
                     style={styles.usernameField}
                     placeholder='...'
+                    onChangeText={onChangeName}
+                    value={name}
                     />
                 </View>
                 <Text style = {styles.fieldText}>parolă:</Text>
@@ -30,12 +54,15 @@ export default function LoginPage(){
                     style={styles.passwordField}
                     placeholder='...'
                     secureTextEntry
+                    onChangeText={onChangePassword}
+                    value={password}
                     />
                 </View>
                 <Pressable style = {styles.loginButton}
                 >
-                    <Text style = {styles.buttonText}>loghează-te</Text>
+                    <Text onPress={submitCredentials} style = {styles.buttonText}>loghează-te</Text>
                 </Pressable>
+                <Text> {name} {password}</Text>
               </View>
           </View>
     )

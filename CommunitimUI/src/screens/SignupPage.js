@@ -1,6 +1,33 @@
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView,TextInput} from 'react-native';
-import React from 'react';
-export default function SignupPage(){
+import React ,{useState,useEffect} from 'react';
+import axios from "axios";
+import Constants from "expo-constants"
+
+export default function SignupPage({navigation}){
+    const [name,onChangeName] = useState("");
+    const [password,onChangePassword] = useState("");
+    const [email,onChangeEmail] = useState("");
+    const goToLoginPage = () =>{
+      navigation.navigate('screen_login');
+    }
+    const submitCredentials = async (event) =>{
+      try {
+        const response = await axios.post('http://192.168.0.213:8080/users/add', {
+          username:name,
+          password:password,
+          email:email
+        });
+        if (response.status === 200) {
+          alert("You have created the account succesfully.");
+          goToLoginPage();
+        } else {
+          throw new Error("An error has occurred");
+        }
+      } catch (error) {
+        alert("An error has occurred" +error + name + password + email);
+      }
+    };
+    
     return(
         <View style= {styles.container}>
             <SafeAreaView style={styles.header}>
@@ -20,6 +47,8 @@ export default function SignupPage(){
                     <TextInput
                     style={styles.usernameField}
                     placeholder='...'
+                    onChangeText={onChangeName}
+                    value={name}
                     />
                 </View>
 
@@ -29,6 +58,8 @@ export default function SignupPage(){
                     style={styles.passwordField}
                     placeholder='...'
                     secureTextEntry
+                    onChangeText={onChangePassword}
+                    value={password}
                     />
                 </View>
 
@@ -37,13 +68,17 @@ export default function SignupPage(){
                     <TextInput
                     style={styles.passwordField}
                     placeholder='...'
+                    onChangeText={onChangeEmail}
+                    value={email}
                     />
                 </View>
 
-                <Pressable style = {styles.loginButton}
+                <Pressable 
+                style = {styles.loginButton}
                 >
-                    <Text style = {styles.buttonText}>Creează</Text>
+                    <Text onPress={submitCredentials} style = {styles.buttonText}>Creează</Text>
                 </Pressable>
+                <Text> {name} {password} {email}</Text>
             </View>
         </View>
     )

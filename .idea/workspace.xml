@@ -23,14 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="308cf16e-a3ba-4556-80b5-10b3f37fb503" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommunitimUI/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/CommunitimUI/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/CommunitimApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/CommunitimApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/java/com/rr/communitim/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communitim/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/communitim/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -44,62 +61,86 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="27U9HjEGgMJJFobIrZHWcuOdw2f" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/raluca/Desktop/Faculta/AN 3/SEM 2/IC/CommuniTIM&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7f5789f2679ae069d16e4cf40fe34226&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/communitim" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Spring Boot.CommuniTimApp">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="CommuniTimApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="communitim" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rr.communitim.CommunitimApplication" />
-      <option name="VM_PARAMETERS" value="$JDKPath$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ACTIVE_PROFILES" />
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
-      <envs>
-        <env name="JAVA_HOME" value="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home/bin" />
-      </envs>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="communitim" />
+      <selectedOptions>
+        <option name="environmentVariables" />
+      </selectedOptions>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rr.communitim.CommunitimApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommunitimApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="CommuniTIM" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.rr.communitim.CommunitimApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
+      <item itemvalue="Spring Boot.CommuniTimApp" />
+      <item itemvalue="Spring Boot.CommunitimApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
@@ -124,7 +165,13 @@
       <workItem from="1653755644958" duration="1696000" />
       <workItem from="1653761895022" duration="823000" />
       <workItem from="1653762750541" duration="9000" />
-      <workItem from="1653762778664" duration="1664000" />
+      <workItem from="1653762778664" duration="2326000" />
+      <workItem from="1653768873069" duration="568000" />
+      <workItem from="1653769782022" duration="2168000" />
+      <workItem from="1653776191555" duration="40000" />
+      <workItem from="1653776247188" duration="20000" />
+      <workItem from="1653776317637" duration="4393000" />
+      <workItem from="1653839349715" duration="10180000" />
     </task>
     <servers />
   </component>
@@ -141,29 +188,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="25" width="1071" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653764356885">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="184" y="25" width="1071" height="802" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764356885" />
-    <state x="507" y="135" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1653764275657">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="507" y="135" key="#com.intellij.ide.macro.MacrosDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764275657" />
-    <state x="402" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1653762989085">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="402" y="219" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1653762989085" />
-    <state x="402" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.1440.802@0.25.1440.802" timestamp="1653762207673" />
-    <state x="576" y="155" key="EnvironmentVariablesDialog" timestamp="1653764283282">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="576" y="155" key="EnvironmentVariablesDialog/0.25.1440.802@0.25.1440.802" timestamp="1653764283282" />
-    <state x="208" y="25" key="SettingsEditor" timestamp="1653764469160">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="208" y="25" key="SettingsEditor/0.25.1440.802@0.25.1440.802" timestamp="1653764469160" />
   </component>
 </project>
