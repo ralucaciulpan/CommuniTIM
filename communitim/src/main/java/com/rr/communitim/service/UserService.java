@@ -2,7 +2,9 @@ package com.rr.communitim.service;
 
 import com.rr.communitim.model.User;
 import com.rr.communitim.repository.UserRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -36,7 +38,7 @@ public class UserService {
 
         }
         else
-            throw new IllegalStateException("The user doesnt exist");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username does not exist.\n");
     }
 
     public List<User> getUsers() {

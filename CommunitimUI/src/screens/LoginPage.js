@@ -15,7 +15,7 @@ export default function LoginPage({navigation}){
         username:name,
         password:password
       });
-      if (response.status === 200) {
+      if (response.status === 200 && id!=null) {
         alert("You have logged in succesfully.");
         goToActionPage();
       } else {
