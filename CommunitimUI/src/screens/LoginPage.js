@@ -15,14 +15,14 @@ export default function LoginPage({navigation}){
         username:name,
         password:password
       });
-      if (response.status === 200 && id!=null) {
+      if (response.status === 200) {
         alert("You have logged in succesfully.");
         goToActionPage();
       } else {
         throw new Error("An error has occurred");
       }
     } catch (error) {
-      alert("An error has occurred" +error + name + password);
+      alert("Username or password incorrect");
     }
   };
     return(
