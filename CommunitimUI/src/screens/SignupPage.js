@@ -3,7 +3,7 @@ import React ,{useState,useEffect} from 'react';
 import axios from "axios";
 import Constants from "expo-constants"
 
-export default function SignupPdage({navigation}){
+export default function SignupPage({navigation}){
     const [name,onChangeName] = useState("");
     const [password,onChangePassword] = useState("");
     const [email,onChangeEmail] = useState("");

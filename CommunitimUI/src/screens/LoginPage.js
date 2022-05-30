@@ -2,7 +2,8 @@
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
 export default function LoginPage(){
-    const [text, setText] = React.useState("");
+  const [name,onChangeName] = useState("");
+  const [password,onChangePassword] = useState("");
     return(
         <View style = {styles.container}>
             <SafeAreaView style = {styles.header}>
@@ -22,6 +23,8 @@ export default function LoginPage(){
                     <TextInput
                     style={styles.usernameField}
                     placeholder='...'
+                    onChangeText={onChangeName}
+                    value={name}
                     />
                 </View>
                 <Text style = {styles.fieldText}>parolă:</Text>
@@ -30,12 +33,15 @@ export default function LoginPage(){
                     style={styles.passwordField}
                     placeholder='...'
                     secureTextEntry
+                    onChangeText={onChangePassword}
+                    value={password}
                     />
                 </View>
                 <Pressable style = {styles.loginButton}
                 >
                     <Text style = {styles.buttonText}>loghează-te</Text>
                 </Pressable>
+                <Text> {name} {password}</Text>
               </View>
           </View>
     )
