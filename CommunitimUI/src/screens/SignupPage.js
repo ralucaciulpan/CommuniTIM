@@ -3,11 +3,13 @@ import React ,{useState,useEffect} from 'react';
 import axios from "axios";
 import Constants from "expo-constants"
 
-export default function SignupPage(){
+export default function SignupPage({navigation}){
     const [name,onChangeName] = useState("");
     const [password,onChangePassword] = useState("");
     const [email,onChangeEmail] = useState("");
-
+    const goToLoginPage = () =>{
+      navigation.navigate('screen_login');
+    }
     const submitCredentials = async (event) =>{
       try {
         const response = await axios.post('http://192.168.0.213:8080/users/add', {
@@ -16,7 +18,8 @@ export default function SignupPage(){
           email:email
         });
         if (response.status === 200) {
-          alert(` You have created: ${JSON.stringify(response.data)}`);
+          alert("You have created the account succesfully.");
+          goToLoginPage();
         } else {
           throw new Error("An error has occurred");
         }
