@@ -1,6 +1,7 @@
 
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
+import axios from "axios";
 export default function LoginPage({navigation}){
   const [name,onChangeName] = useState("");
   const [password,onChangePassword] = useState("");
@@ -10,11 +11,11 @@ export default function LoginPage({navigation}){
   }
   const submitCredentials = async (event) =>{
     try {
-      const response = await axios.post('http://192.168.0.213:8080/users/add', {
+      const response = await axios.post('http://192.168.0.213:8080/users/login', {
         username:name,
         password:password
       });
-      if (response.status === 200 && name!=null && password !=null) {
+      if (response.status === 200) {
         alert("You have logged in succesfully.");
         goToActionPage();
       } else {
