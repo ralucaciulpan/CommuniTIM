@@ -29,7 +29,14 @@ public class UserService {
     }
 
     public User loginUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username,password).orElse(null);
+        User response = userRepository.findByUsernameAndPassword(username,password).orElse(null);
+        if(response!=null){
+            System.out.println("This is the response: " + response);
+            return response;
+
+        }
+        else
+            throw new IllegalStateException("The user doesnt exist");
     }
 
     public List<User> getUsers() {

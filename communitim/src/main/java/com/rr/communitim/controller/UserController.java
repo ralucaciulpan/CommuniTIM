@@ -29,14 +29,17 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public void loginUser(@RequestBody User user){
+    public User loginUser(@RequestBody User user) {
+        User authUser;
         System.out.println("login request " + user);
-        User loggedIn = userService.loginUser(user.getUsername(),user.getPassword());
-        if(loggedIn!=null){
-            System.out.println("succeded");
+        try{
+             authUser=userService.loginUser(user.getUsername(),user.getPassword());
+             System.out.println("loggin succeded" + authUser);
+             return authUser;
+        }catch(IllegalStateException e) {
+            System.out.println(e);
         }
-        else{
-            System.out.println("not succeded");
-        }
+        return null;
     }
 }
+

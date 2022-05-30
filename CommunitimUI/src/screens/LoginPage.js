@@ -1,9 +1,29 @@
 
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
-export default function LoginPage(){
+export default function LoginPage({navigation}){
   const [name,onChangeName] = useState("");
   const [password,onChangePassword] = useState("");
+
+  const goToActionPage = () =>{
+    navigation.navigate('screen_action');
+  }
+  const submitCredentials = async (event) =>{
+    try {
+      const response = await axios.post('http://192.168.0.213:8080/users/add', {
+        username:name,
+        password:password
+      });
+      if (response.status === 200 && name!=null && password !=null) {
+        alert("You have logged in succesfully.");
+        goToActionPage();
+      } else {
+        throw new Error("An error has occurred");
+      }
+    } catch (error) {
+      alert("An error has occurred" +error + name + password);
+    }
+  };
     return(
         <View style = {styles.container}>
             <SafeAreaView style = {styles.header}>
@@ -39,7 +59,7 @@ export default function LoginPage(){
                 </View>
                 <Pressable style = {styles.loginButton}
                 >
-                    <Text style = {styles.buttonText}>loghează-te</Text>
+                    <Text onPress={submitCredentials} style = {styles.buttonText}>loghează-te</Text>
                 </Pressable>
                 <Text> {name} {password}</Text>
               </View>
