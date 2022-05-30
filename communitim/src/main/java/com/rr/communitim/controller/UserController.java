@@ -27,4 +27,16 @@ public class UserController {
     public void registerNewUser(@RequestBody User user){
         userService.registerUser(user);
     }
+
+    @PostMapping("/login")
+    public void loginUser(@RequestBody User user){
+        System.out.println("login request " + user);
+        User loggedIn = userService.loginUser(user.getUsername(),user.getPassword());
+        if(loggedIn!=null){
+            System.out.println("succeded");
+        }
+        else{
+            System.out.println("not succeded");
+        }
+    }
 }

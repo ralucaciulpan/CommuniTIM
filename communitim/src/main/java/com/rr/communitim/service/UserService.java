@@ -28,8 +28,8 @@ public class UserService {
         }
     }
 
-    public User loginUser(String username, String password){
-        return userRepository.findByUsernameAndPassword(username, password).orElse(null);
+    public User loginUser(String username, String password) {
+        return userRepository.findByUsernameAndPassword(username,password).orElse(null);
     }
 
     public List<User> getUsers() {
