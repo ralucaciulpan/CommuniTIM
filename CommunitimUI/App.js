@@ -6,6 +6,7 @@ import LoginPage from './src/screens/LoginPage';
 import SignupPage from './src/screens/SignupPage';
 import CategoryPage from './src/screens/CategoryPage';
 import ActionPage from './src/screens/ActionPage';
+import ProblemPage from './src/screens/ProblemPage';
 
 const Stack = createStackNavigator();
 
@@ -19,7 +20,7 @@ export default function App() {
          }
        }>
 
-        <Stack.Screen
+      <Stack.Screen
         name="screen_problem"
         component={ProblemPage}
        />
