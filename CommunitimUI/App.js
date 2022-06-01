@@ -22,6 +22,10 @@ export default function App() {
          }
        }>
          <Stack.Screen
+        name="screen_category"
+        component={CategoryPage}
+       />
+         <Stack.Screen
         name="screen_lightProblem"
         component={LightProblemPage}
        />
@@ -31,10 +35,7 @@ export default function App() {
         component={OtherProblemPage}
        />
 
-        <Stack.Screen
-        name="screen_category"
-        component={CategoryPage}
-       />
+      
 
         <Stack.Screen 
         name="screen_home"

@@ -10,6 +10,9 @@ export default function CategoryPage({navigation}){
       const otherProblemHandler = () =>{
         navigation.navigate('screen_otherProblem')
       }
+      const actionHandler = () =>{
+        navigation.navigate('screen_action')
+      }
     return (
         
         <View style={styles.container}>
@@ -39,6 +42,12 @@ export default function CategoryPage({navigation}){
                     <Text style = {styles.buttonText}>altele</Text>
                 </Pressable>
             </View>
+
+            <Pressable 
+                onPress={actionHandler}
+                style = {styles.backButton}>
+            <Text style = {styles.backButtonText}>înapoi</Text>
+            </Pressable>
 
 
         </View>
@@ -75,5 +84,25 @@ const styles = StyleSheet.create({
        alignSelf:'center',
        marginTop: 25,
        marginBottom: 25
-   } 
+   },
+
+   backButton:{
+    marginTop:170,
+    marginLeft:15,
+    marginRight:250,
+    alignItems: 'flex-start',
+    justifyContent:'flex-start',
+    paddingVertical:12,
+    paddingHorizontal:32,
+    borderRadius:6,
+    elevation:3,
+    backgroundColor:"#9933ff"
+  },
+
+  backButtonText:{
+    color:"#fff", 
+    alignSelf:'center',
+    fontWeight:'bold',
+    fontSize:20,
+  },
 });
