@@ -1,7 +1,9 @@
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import Checkbox from 'expo-checkbox';
 
 export default function ProblemPage(){
+    const [isChecked, setChecked] = useState(false);
     return (
         <View style={styles.container}>
             <View>
@@ -9,21 +11,33 @@ export default function ProblemPage(){
                     Selectează problema:
                 </Text>
             </View>
-            <View>
-                <Pressable style = {styles.backButton}
-                >
-                    <Text style = {styles.buttonText}>înapoi</Text>
-                </Pressable>
+
+
+            <View style={styles.section}>
+                <Checkbox style={styles.checkbox} value={isChecked} onValueChange={setChecked} />
+                <Text style={styles.paragraph}>Normal checkbox</Text>
             </View>
-            <View>
-                <Pressable style = {styles.forwardButton}
-                >
-                    <Text style = {styles.buttonText}>înainte</Text>
-                </Pressable>
+            <View style={styles.section}>
+                <Checkbox
+                style={styles.checkbox}
+                value={isChecked}
+                onValueChange={setChecked}
+                color={isChecked ? "#9933ff" : undefined}
+                />
             </View>
+
+            <Pressable style = {styles.backButton}>
+                <Text style = {styles.buttonText}>înapoi</Text>
+            </Pressable>
+
+            <Pressable style = {styles.forwardButton}>
+                <Text style = {styles.buttonText}>înainte</Text>
+            </Pressable>
+        
         </View>
     )
 }
+
 const windowWidth = Dimensions.get('window').width;
 const styles = StyleSheet.create({
 
@@ -42,7 +56,7 @@ const styles = StyleSheet.create({
     },
 
     backButton:{
-        marginTop:600,
+        marginTop:470,
         marginLeft:15,
         marginRight:250,
         alignItems: 'flex-start',
@@ -72,7 +86,18 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         fontWeight:'bold',
         fontSize:20,
+      },
+
+
+      section: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginLeft: 20
+      },
+      paragraph: {
+        fontSize: 15,
+      },
+      checkbox: {
+        margin: 20,
       }
-
-
 })
