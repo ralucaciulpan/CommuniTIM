@@ -19,8 +19,9 @@ public class Problem {
     public Problem(String category, String subcategory, double longitude, double latitude) {
         this.category = category;
         this.subcategory = subcategory;
-        this.longitude = longitude;
         this.latitude = latitude;
+        this.longitude = longitude;
+
     }
 
     public String getCategory() {
