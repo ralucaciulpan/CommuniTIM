@@ -1,6 +1,0 @@
-{
-  "timestamp": "2022-05-29T19:04:49.146+00:00",
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/users/users/adduser"
-}

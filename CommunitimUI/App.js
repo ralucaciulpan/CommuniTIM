@@ -21,6 +21,10 @@ export default function App() {
            headerShown:false
          }
        }>
+         <Stack.Screen 
+        name="screen_home"
+        component = {HomePage}
+       />
          <Stack.Screen
         name="screen_category"
         component={CategoryPage}
@@ -33,13 +37,6 @@ export default function App() {
         <Stack.Screen
         name="screen_otherProblem"
         component={OtherProblemPage}
-       />
-
-      
-
-        <Stack.Screen 
-        name="screen_home"
-        component = {HomePage}
        />
 
       <Stack.Screen

@@ -1,3 +1,91 @@
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-06-02T001158.200.json
+
+###
+
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+<> 2022-06-02T001154.404.json
+
+###
+
+GET http://localhost:8080/users
+
+<> 2022-06-02T001152.200.json
+
+###
+
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+<> 2022-06-02T001144.404.json
+
+###
+
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+<> 2022-06-02T001047.404.json
+
+###
+
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+<> 2022-06-02T001037.404.json
+
+###
+
+POST http://localhost:8080/users/add
+Content-Type: application/json
+
+{
+  "username": "radu",
+  "password": "parola",
+  "email": "emailradu"
+}
+
+<> 2022-06-02T000601.404.json
+
+###
+
 POST http://localhost:8080/users
 Content-Type: application/json
 
@@ -450,99 +538,6 @@ Content-Type: application/json
 GET http://localhost:8080/users
 
 <> 2022-05-29T220513.200.json
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
-
-<> 2022-05-29T220449.500.json
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-{:
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}:
-
-<> 2022-05-29T215623.400.html
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-<> 2022-05-29T215516.400.json
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "id": 2,
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
-
-###
-
-POST http://localhost:8080/users/users/adduser
-Content-Type: application/json
-
-{
-  "username": "radu",
-  "password": "parola",
-  "email": "email"
-}
 
 ###
 
