@@ -1,14 +1,18 @@
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, {useState} from 'react';
 export default function CategoryPage({navigation}){
+
     const problemHandler = () =>{
         navigation.navigate('screen_problem')
+        setSelect1(true);
       }
     const lightProblemHandler = () =>{
         navigation.navigate('screen_lightProblem')
+        setSelect2(true);
       }
       const otherProblemHandler = () =>{
         navigation.navigate('screen_otherProblem')
+        setSelect3(true);
       }
       const actionHandler = () =>{
         navigation.navigate('screen_action')

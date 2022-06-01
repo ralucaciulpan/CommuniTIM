@@ -27,7 +27,7 @@ public class UserController {
         return userService.getUsers();
     }
 
-    @PostMapping(path="/add")
+    @PostMapping(path=  "/add")
     public void registerNewUser(@RequestBody User user){
         userService.registerUser(user);
     }

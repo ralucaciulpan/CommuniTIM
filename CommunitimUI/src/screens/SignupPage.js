@@ -12,7 +12,7 @@ export default function SignupPage({navigation}){
     }
     const submitCredentials = async (event) =>{
       try {
-        const response = await axios.post('http://192.168.1.193:8080/users/add', {
+        const response = await axios.post('http://192.168.1.233:8080/users/add', {
           username:name,
           password:password,
           email:email

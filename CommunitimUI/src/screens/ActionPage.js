@@ -7,6 +7,7 @@ export default function ActionPage({navigation}){
     const homepageHandler = () =>{
         navigation.navigate('screen_home')
     }
+
     return(
         
         <View style = {styles.container}>
