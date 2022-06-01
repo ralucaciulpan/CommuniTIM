@@ -19,6 +19,11 @@ export default function App() {
          }
        }>
 
+        <Stack.Screen
+        name="screen_problem"
+        component={ProblemPage}
+       />
+
       <Stack.Screen 
         name="screen_home"
         component = {HomePage}
