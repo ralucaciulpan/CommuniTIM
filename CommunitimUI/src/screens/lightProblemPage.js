@@ -28,7 +28,7 @@ export default function LightProblemPage({navigation}){
                 color={isChecked1 ? "#9933ff" : undefined}
                 disabled = {isChecked2 || isChecked3 || isChecked4 ? true : false}
                 />
-                <Text style={styles.paragraph}>Lampă de iluminare nefuncțională</Text>
+                <Text style={styles.paragraph}>Lampă de iluminare defectă</Text>
             </View>
 
             <View style={styles.section}>
@@ -50,7 +50,7 @@ export default function LightProblemPage({navigation}){
                 color={isChecked3 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked2 || isChecked4 ? true : false}
                 />
-                <Text style={styles.paragraph}>Fire de curent căzute</Text>
+                <Text style={styles.paragraph}>Lampă de iluminare lipsă</Text>
             </View>
 
             <View style={styles.section}>
@@ -61,7 +61,7 @@ export default function LightProblemPage({navigation}){
                 color={isChecked4 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked2 ? true : false}
                 />
-                <Text style={styles.paragraph}>Lipsă lampă de iluminare</Text>
+                <Text style={styles.paragraph}>Fire de curent căzute</Text>
             </View>
             
             <Pressable 
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     },
 
     backButton:{
-        marginTop:80,
+        marginTop:180,
         marginLeft:15,
         marginRight:250,
         alignItems: 'flex-start',
