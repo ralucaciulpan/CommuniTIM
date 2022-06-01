@@ -19,20 +19,21 @@ export default function App() {
            headerShown:false
          }
        }>
+        <Stack.Screen
+        name="screen_category"
+        component={CategoryPage}
+       />
+       
+        <Stack.Screen 
+        name="screen_home"
+        component = {HomePage}
+       />
 
       <Stack.Screen
         name="screen_problem"
         component={ProblemPage}
        />
 
-      <Stack.Screen 
-        name="screen_home"
-        component = {HomePage}
-       />
-         <Stack.Screen
-        name="screen_category"
-        component={CategoryPage}
-       />
        <Stack.Screen
         name="screen_action"
         component={ActionPage}
