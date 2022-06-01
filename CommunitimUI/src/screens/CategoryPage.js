@@ -7,6 +7,9 @@ export default function CategoryPage({navigation}){
     const lightProblemHandler = () =>{
         navigation.navigate('screen_lightProblem')
       }
+      const otherProblemHandler = () =>{
+        navigation.navigate('screen_otherProblem')
+      }
     return (
         
         <View style={styles.container}>
@@ -31,16 +34,12 @@ export default function CategoryPage({navigation}){
             </View>
 
             <View style={styles.buttonsContainer}>
-                <Pressable>
-                    <Text style = {styles.buttonText}>categorie</Text>
+                <Pressable
+                onPress={otherProblemHandler}>
+                    <Text style = {styles.buttonText}>altele</Text>
                 </Pressable>
             </View>
 
-            <View style={styles.buttonsContainer}>
-                <Pressable>
-                    <Text style = {styles.buttonText}>alta categorie</Text>
-                </Pressable>
-            </View>
 
         </View>
 

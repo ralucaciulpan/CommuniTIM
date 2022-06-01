@@ -8,7 +8,7 @@ import CategoryPage from './src/screens/CategoryPage';
 import ActionPage from './src/screens/ActionPage';
 import ProblemPage from './src/screens/ProblemPage';
 import LightProblemPage from './src/screens/lightProblemPage';
-import OtherProblemPage from './src/screens/otherProblemPage';
+import OtherProblemPage from './src/screens/OtherProblemPage'
 
 const Stack = createStackNavigator();
 
