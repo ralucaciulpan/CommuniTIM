@@ -8,6 +8,7 @@ import CategoryPage from './src/screens/CategoryPage';
 import ActionPage from './src/screens/ActionPage';
 import ProblemPage from './src/screens/ProblemPage';
 import LightProblemPage from './src/screens/lightProblemPage';
+import OtherProblemPage from './src/screens/otherProblemPage';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,11 @@ export default function App() {
          <Stack.Screen
         name="screen_lightProblem"
         component={LightProblemPage}
+       />
+
+        <Stack.Screen
+        name="screen_otherProblem"
+        component={OtherProblemPage}
        />
 
         <Stack.Screen
