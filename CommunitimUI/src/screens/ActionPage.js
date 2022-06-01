@@ -31,9 +31,9 @@ export default function ActionPage({navigation}){
                     <View style={styles.div1button2}>
                         <Image 
                             style={styles.settings}
-                            source={require('../utils/settings.png')}
+                            source={require('../utils/map.png')}
                         />
-                        <Text style={styles.settingsText}>Setările contului</Text>
+                        <Text style={styles.settingsText}>Vezi harta</Text>
                     </View>
 
                 </View>
