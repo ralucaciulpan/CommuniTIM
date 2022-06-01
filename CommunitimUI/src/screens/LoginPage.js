@@ -11,7 +11,7 @@ export default function LoginPage({navigation}){
   }
   const submitCredentials = async (event) =>{
     try {
-      const response = await axios.post('http://localhost:8080/users/login', {
+      const response = await axios.post('http://192.168.1.193:8080/users/login', {
         username:name,
         password:password
       });

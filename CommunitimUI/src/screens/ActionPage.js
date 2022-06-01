@@ -1,9 +1,12 @@
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView,TextInput} from 'react-native';
 import React from 'react';
-export default function ActionPage(){
+export default function ActionPage({navigation}){
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
+    const homepageHandler = () =>{
+        navigation.navigate('screen_home')
+    }
     return(
         
         <View style = {styles.container}>
@@ -15,11 +18,14 @@ export default function ActionPage(){
             <View style={styles.body}>
                 <View style={styles.div1}>
                     <View style={styles.div1button1}>
+                        <Pressable
+                        onPress={categoryHandler}>
                         <Image 
                             style={styles.plus}
                             source={require('../utils/plusSign.png')}
                         />
                         <Text style={styles.plusText}>Raportează o problemă</Text>
+                        </Pressable>
                     </View>
 
                     <View style={styles.div1button2}>
@@ -59,11 +65,14 @@ export default function ActionPage(){
                     </View>
 
                     <View style={styles.div3button2}>
+                    <Pressable
+                        onPress={homepageHandler}>
                     <Image 
                             style={styles.streetLamp}
                             source={require('../utils/home.png')}
                         />   
-                    <Text style={styles.streetLampText}>Înapoi la HomePage</Text>    
+                    <Text style={styles.streetLampText}>Înapoi la HomePage</Text>  
+                    </Pressable> 
                     </View>    
                 </View>
             </View>
@@ -154,7 +163,8 @@ const styles = StyleSheet.create({
     },
     plus:{
         resizeMode:'stretch',
-        marginTop:25
+        marginTop:25,
+        alignSelf:'center'
     },
     plusText:{
         fontWeight:'bold',
