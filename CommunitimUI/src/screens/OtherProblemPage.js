@@ -11,6 +11,9 @@ export default function OthertProblemPage({navigation}){
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
+      const addressHandler = () =>{
+        navigation.navigate('screen_address')
+      }
 
     return (
         <View style={styles.container}>
@@ -71,7 +74,8 @@ export default function OthertProblemPage({navigation}){
             </Pressable>
 
 
-            <Pressable style = {styles.forwardButton}>
+            <Pressable style = {styles.forwardButton}
+            onPress={addressHandler}>
                 <Text style = {styles.buttonText}>înainte</Text>
             </Pressable>
         

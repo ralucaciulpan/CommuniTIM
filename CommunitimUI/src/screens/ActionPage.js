@@ -92,10 +92,12 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     headerText:{
+        marginTop: 100,
+        marginBottom: 40,
+        alignSelf: 'center',
+        fontSize:35,
         fontWeight:'bold',
-        color:"#9933ff",
-        fontSize:25,
-        marginTop:30
+        color: "#9933ff"
     },
     body:{
         flex:4,
@@ -175,7 +177,8 @@ const styles = StyleSheet.create({
     },
     settings:{
         resizeMode:'stretch',
-        marginTop:25
+        marginTop:25,
+        alignSelf:'center'
     },
     settingsText:{
         fontWeight:'bold',
@@ -185,7 +188,8 @@ const styles = StyleSheet.create({
     },
     roads:{
         resizeMode:'stretch',
-        marginTop:25
+        marginTop:25,
+        alignSelf:'center'
     },
     roadsText:{
         fontWeight:'bold',
@@ -196,7 +200,8 @@ const styles = StyleSheet.create({
     },
     streetLamp:{
         resizeMode:'stretch',
-        marginTop:25
+        marginTop:25,
+        alignSelf:'center'
     },
     streetLampText:{
         fontWeight:'bold',

@@ -12,6 +12,9 @@ export default function ProblemPage({navigation}){
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
+      const addressHandler = () =>{
+        navigation.navigate('screen_address')
+      }
 
     return (
         <View style={styles.container}>
@@ -29,7 +32,7 @@ export default function ProblemPage({navigation}){
                 color={isChecked1 ? "#9933ff" : undefined}
                 disabled = {isChecked2 || isChecked3 || isChecked4 || isChecked5 ? true : false}
                 />
-                <Text style={styles.paragraph}>Pothole</Text>
+                <Text style={styles.paragraph}>Groapă</Text>
             </View>
 
             <View style={styles.section}>
@@ -40,7 +43,7 @@ export default function ProblemPage({navigation}){
                 color={isChecked2 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked4 || isChecked5 ? true : false}
                 />
-                <Text style={styles.paragraph}>Faded road marking</Text>
+                <Text style={styles.paragraph}>Marcaj rutier șters</Text>
             </View>
 
             <View style={styles.section}>
@@ -51,7 +54,7 @@ export default function ProblemPage({navigation}){
                 color={isChecked3 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked2 || isChecked4 || isChecked5 ? true : false}
                 />
-                <Text style={styles.paragraph}>Wrong road marking</Text>
+                <Text style={styles.paragraph}>Marcaj rutier greșit</Text>
             </View>
 
             <View style={styles.section}>
@@ -62,7 +65,7 @@ export default function ProblemPage({navigation}){
                 color={isChecked4 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked2 || isChecked5 ? true : false}
                 />
-                <Text style={styles.paragraph}>Non-functional traffic light</Text>
+                <Text style={styles.paragraph}>Semafor nefuncțional</Text>
             </View>
 
             <View style={styles.section}>
@@ -73,7 +76,7 @@ export default function ProblemPage({navigation}){
                 color={isChecked5 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked4 || isChecked2 ? true : false}
                 />
-                <Text style={styles.paragraph}>Broken/missing road sign</Text>
+                <Text style={styles.paragraph}>Semn rutier distrus/lipsă</Text>
             </View>
             
             <Pressable 
@@ -83,7 +86,8 @@ export default function ProblemPage({navigation}){
             </Pressable>
 
 
-            <Pressable style = {styles.forwardButton}>
+            <Pressable style = {styles.forwardButton}
+              onPress={addressHandler}>
                 <Text style = {styles.buttonText}>înainte</Text>
             </Pressable>
         

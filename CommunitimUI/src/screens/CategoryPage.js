@@ -92,10 +92,10 @@ const styles = StyleSheet.create({
 
    backButton:{
     marginTop:170,
-    marginLeft:15,
-    marginRight:250,
-    alignItems: 'flex-start',
-    justifyContent:'flex-start',
+    marginLeft:80,
+    marginRight:80,
+    alignItems: 'center',
+    justifyContent:'center',
     paddingVertical:12,
     paddingHorizontal:32,
     borderRadius:6,
