@@ -22,14 +22,15 @@ export default function App() {
            headerShown:false
          }
        }>
-         <Stack.Screen
-        name="screen_address"
-        component={AddressPage}
-       />
          <Stack.Screen 
         name="screen_home"
         component = {HomePage}
        />
+         <Stack.Screen
+        name="screen_address"
+        component={AddressPage}
+       />
+         
          <Stack.Screen
         name="screen_category"
         component={CategoryPage}
