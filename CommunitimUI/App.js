@@ -8,7 +8,8 @@ import CategoryPage from './src/screens/CategoryPage';
 import ActionPage from './src/screens/ActionPage';
 import ProblemPage from './src/screens/ProblemPage';
 import LightProblemPage from './src/screens/lightProblemPage';
-import OtherProblemPage from './src/screens/OtherProblemPage'
+import OtherProblemPage from './src/screens/OtherProblemPage';
+import AddressPage from './src/screens/AddressPage';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,10 @@ export default function App() {
            headerShown:false
          }
        }>
+         <Stack.Screen
+        name="screen_address"
+        component={AddressPage}
+       />
          <Stack.Screen 
         name="screen_home"
         component = {HomePage}
@@ -57,6 +62,8 @@ export default function App() {
         name="screen_signup"
         component={SignupPage}
        />
+
+        
 
   
      </Stack.Navigator>
