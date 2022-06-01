@@ -77,8 +77,8 @@ export default function ProblemPage({navigation}){
             </View>
             
             <Pressable 
-            onPress={categoryHandler}
-            style = {styles.backButton}>
+                onPress={categoryHandler}
+                style = {styles.backButton}>
             <Text style = {styles.buttonText}>înapoi</Text>
             </Pressable>
 
