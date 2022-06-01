@@ -1,6 +1,9 @@
 import {StyleSheet,Text,View,Pressable,Image, Dimensions,Button,SafeAreaView,TextInput} from 'react-native';
 import React from 'react';
 export default function ActionPage(){
+    const categoryHandler = () =>{
+        navigation.navigate('screen_category')
+      }
     return(
         
         <View style = {styles.container}>
@@ -34,7 +37,7 @@ export default function ActionPage(){
                             style={styles.roads}
                             source={require('../utils/road.png')}
                         />
-                        <Text style={styles.roadsText}>Vezi probleme existente cu drumurile</Text>
+                        <Text style={styles.roadsText}>Vezi probleme existente cu străzile</Text>
 
                     </View>
                     <View style={styles.div2button2}>
@@ -47,8 +50,21 @@ export default function ActionPage(){
                     </View>
                 </View>
                 <View style={styles.div3}>
-                    <View style={styles.div3button1}></View>
-                    <View style={styles.div3button2}></View>    
+                    <View style={styles.div3button1}>
+                    <Image 
+                            style={styles.streetLamp}
+                            source={require('../utils/other.png')}
+                        />
+                    <Text style={styles.streetLampText}>Vezi alte probleme existente</Text>
+                    </View>
+
+                    <View style={styles.div3button2}>
+                    <Image 
+                            style={styles.streetLamp}
+                            source={require('../utils/home.png')}
+                        />   
+                    <Text style={styles.streetLampText}>Înapoi la HomePage</Text>    
+                    </View>    
                 </View>
             </View>
         </View>
