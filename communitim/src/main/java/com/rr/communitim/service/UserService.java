@@ -2,7 +2,9 @@ package com.rr.communitim.service;
 
 import com.rr.communitim.model.User;
 import com.rr.communitim.repository.UserRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,8 +30,15 @@ public class UserService {
         }
     }
 
-    public User loginUser(String username, String password){
-        return userRepository.findByUsernameAndPassword(username, password).orElse(null);
+    public User loginUser(String username, String password) {
+        User response = userRepository.findByUsernameAndPassword(username,password).orElse(null);
+        if(response!=null){
+            System.out.println("This is the response: " + response);
+            return response;
+
+        }
+        else
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username does not exist.\n");
     }
 
     public List<User> getUsers() {
