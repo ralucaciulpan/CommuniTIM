@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Checkbox from 'expo-checkbox';
 import axios from "axios"
 import CategoryPage from './CategoryPage';
+import HomePage from './HomePage';
 
 export default function ProblemPage({navigation}){
     const category = "Strazi";
@@ -21,7 +22,7 @@ export default function ProblemPage({navigation}){
     
       const submitCredentials = async (event) =>{
         try {
-          const response = await axios.post('http://192.168.0.213:8080/problems/add', {
+          const response = await axios.post('http://192.168.1.193:8080/problems/add', {
             category:category,
             subcategory:subcategory,
             latitude:latitude,
@@ -29,6 +30,7 @@ export default function ProblemPage({navigation}){
           });
           if (response.status === 200) {
             alert("You have posted the problem succesfully.");
+            navigation.navigate('screen_home');
           } else {
             throw new Error("An error has occurred");
           }
@@ -119,7 +121,6 @@ export default function ProblemPage({navigation}){
                     value={longitude}
                     />
                 </View>
-            <Text>{category} + {subcategory} + {lat} + {lon}</Text>
             <Pressable 
                 onPress={categoryHandler}
                 style = {styles.backButton}>

@@ -21,7 +21,7 @@ export default function OthertProblemPage({navigation}){
 
       const submitCredentials = async (event) =>{
         try {
-          const response = await axios.post('http://192.168.0.213:8080/problems/add', {
+          const response = await axios.post('http://192.168.1.193:8080/problems/add', {
             category:category,
             subcategory:subcategory,
             latitude:latitude,
@@ -29,6 +29,7 @@ export default function OthertProblemPage({navigation}){
           });
           if (response.status === 200) {
             alert("You have posted the problem succesfully.");
+            navigation.navigate('screen_home');
           } else {
             throw new Error("An error has occurred");
           }
