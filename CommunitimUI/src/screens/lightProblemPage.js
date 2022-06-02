@@ -8,6 +8,8 @@ export default function LightProblemPage({navigation}){
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);
     const [isChecked4, setChecked4] = useState(false);
+    const [latitude,onChangeLatitude] = useState("");
+    const [longitude,onChangeLongitude] = useState("");
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
@@ -19,7 +21,7 @@ export default function LightProblemPage({navigation}){
         <View style={styles.container}>
             <View>
                 <Text style={styles.problem_text}>
-                    Selectează problema:
+                    Selectează problema și introdu adresa:
                 </Text>
             </View>
 
@@ -66,6 +68,25 @@ export default function LightProblemPage({navigation}){
                 />
                 <Text style={styles.paragraph}>Fire de curent căzute</Text>
             </View>
+
+            <Text style = {styles.fieldText}>latitudine:</Text>
+                <View style = {styles.usernameFieldContainer}>
+                    <TextInput
+                    style={styles.usernameField}
+                    placeholder='...'
+                    onChangeText={onChangeLatitude}
+                    value={latitude}
+                    />
+                </View>
+                <Text style = {styles.fieldText}>longitudine:</Text>
+                <View style = {styles.usernameFieldContainer}>
+                    <TextInput
+                    style={styles.passwordField}
+                    placeholder='...'
+                    onChangeText={onChangeLongitude}
+                    value={longitude}
+                    />
+                </View>
             
             <Pressable 
                 onPress={categoryHandler}
@@ -95,19 +116,20 @@ const styles = StyleSheet.create({
         marginTop: 100,
         marginBottom: 40,
         alignSelf: 'center',
+        textAlign:'center',
         fontSize:35,
         fontWeight:'bold',
         color: "#9933ff"
     },
 
     backButton:{
-        marginTop:180,
+        marginTop:80,
         marginLeft:15,
         marginRight:250,
         alignItems: 'flex-start',
         justifyContent:'flex-start',
         paddingVertical:12,
-        paddingHorizontal:32,
+        paddingHorizontal:25,
         borderRadius:6,
         elevation:3,
         backgroundColor:"#9933ff"
@@ -120,7 +142,7 @@ const styles = StyleSheet.create({
         alignItems:'baseline',
         justifyContent:'flex-end',
         paddingVertical:12,
-        paddingHorizontal:32,
+        paddingHorizontal:25,
         borderRadius:6,
         elevation:3,
         backgroundColor:"#9933ff"
@@ -133,16 +155,53 @@ const styles = StyleSheet.create({
         fontSize:20,
       },
 
-
       section: {
         flexDirection: 'row',
         alignItems: 'center',
         marginLeft: 20
       },
       paragraph: {
-        fontSize: 22,
+        fontSize: 18
       },
       checkbox: {
-        margin: 40,
+        margin: 15
+      },
+      usernameField:{
+        fontSize:20,
+        color:'#696969',
+        marginLeft:10,
+        marginTop:8
+      },
+
+      passwordField:{
+        fontSize:20,
+        borderTopLeftRadius:50,
+        color:'#696969',
+        marginLeft:10,
+        marginTop:8
+      },
+
+      usernameFieldContainer:{
+        marginTop:15,
+        marginLeft:20,
+        borderLeftWidth:3,
+        borderRightWidth:3,
+        borderTopWidth:3,
+        borderBottomWidth:3,
+        borderRadius:8,
+        width:windowWidth-50,
+        height:50,
+        marginBottom:-15,
+        borderColor:'#696969'
+    },
+
+    fieldText:{
+        marginLeft:20,
+        marginTop: 60,
+        color:'#696969',
+        fontSize:15,
+        fontWeight:'bold',
+        marginBottom:5,
+        alignSelf: 'flex-start'
       }
 })
