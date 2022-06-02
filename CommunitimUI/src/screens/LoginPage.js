@@ -91,7 +91,7 @@ export default function LoginPage({navigation}){
       alignItems:'center'
     },
     logo:{
-        marginBottom:250
+        marginBottom:20
     },
     welcome_text:{
         fontSize:30,

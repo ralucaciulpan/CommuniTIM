@@ -13,7 +13,7 @@ export default function HomePage({navigation}){
       <View style = {styles.container}>
         <View style = {styles.header}>
           <Image 
-            source={require('../utils/placeholderlogo.png')}
+            source={require('../utils/logo.png')}
             resizeMode='stretch'
           />
         </View>
