@@ -5,14 +5,14 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 
 
-export default function HomeScreen() {
+export default function MapPage({navigation}) {
   
   const [problems,setProblems] = useState([]); 
     useEffect(() =>{
-      axios.get('http://192.168.0.213:8080/problems/get/all')
+      axios.get('http://192.168.0.213:8080/problems')
         .then(res=>{
           console.log(res);
-          setMuseums(res.data);
+          setProblems(res.data);
         })
         .catch(err => {
           console.log(err)
