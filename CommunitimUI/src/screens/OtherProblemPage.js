@@ -98,7 +98,7 @@ export default function OthertProblemPage({navigation}){
 
             <Pressable style = {styles.forwardButton}
             onPress={addressHandler}>
-                <Text style = {styles.buttonText}>înainte</Text>
+                <Text style = {styles.buttonText}>postează</Text>
             </Pressable>
         
         </View>
