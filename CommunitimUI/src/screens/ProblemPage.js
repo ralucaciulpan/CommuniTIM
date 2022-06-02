@@ -1,10 +1,13 @@
 import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button, SafeAreaView} from 'react-native';
 import React, { useState } from 'react';
 import Checkbox from 'expo-checkbox';
+import axios from "axios"
 import CategoryPage from './CategoryPage';
 
 export default function ProblemPage({navigation}){
     const category = "Strazi";
+    const [subcategory,setSubcategory] = useState("");
+
     const [isChecked1, setChecked1] = useState(false);
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);
@@ -15,10 +18,26 @@ export default function ProblemPage({navigation}){
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
-      const addressHandler = () =>{
-        navigation.navigate('screen_address')
-      }
-
+    
+      const submitCredentials = async (event) =>{
+        try {
+          const response = await axios.post('http://192.168.0.213:8080/problems/add', {
+            category:category,
+            subcategory:subcategory,
+            latitude:latitude,
+            longitude:longitude
+          });
+          if (response.status === 200) {
+            alert("You have posted the problem succesfully.");
+          } else {
+            throw new Error("An error has occurred");
+          }
+        } catch (error) {
+          alert(error);
+        }
+      };
+      const lat=parseFloat(latitude);
+      const lon=parseFloat(longitude);
     return (
         <View style={styles.container}>
             <View>
@@ -31,7 +50,7 @@ export default function ProblemPage({navigation}){
                 <Checkbox
                 style={styles.checkbox}
                 value={isChecked1}
-                onValueChange={setChecked1}
+                onValueChange={()=>{isChecked1 ? setChecked1(false):setChecked1(true);isChecked1 ? setSubcategory("Groapa"): setSubcategory(""),console.log(subcategory)}}
                 color={isChecked1 ? "#9933ff" : undefined}
                 disabled = {isChecked2 || isChecked3 || isChecked4 || isChecked5 ? true : false}
                 />
@@ -42,7 +61,7 @@ export default function ProblemPage({navigation}){
                 <Checkbox
                 style={styles.checkbox}
                 value={isChecked2}
-                onValueChange={setChecked2}
+                onValueChange={()=>{isChecked2 ? setChecked2(false):setChecked2(true);isChecked2 ? setSubcategory("Marcaj rutier șters"): setSubcategory(""),console.log(subcategory)}}
                 color={isChecked2 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked4 || isChecked5 ? true : false}
                 />
@@ -53,7 +72,7 @@ export default function ProblemPage({navigation}){
                 <Checkbox
                 style={styles.checkbox}
                 value={isChecked3}
-                onValueChange={setChecked3}
+                onValueChange={()=>{isChecked3 ? setChecked3(false):setChecked3(true);isChecked3 ? setSubcategory("Marcaj rutier greșit"): setSubcategory(""),console.log(subcategory)}}
                 color={isChecked3 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked2 || isChecked4 || isChecked5 ? true : false}
                 />
@@ -64,7 +83,7 @@ export default function ProblemPage({navigation}){
                 <Checkbox
                 style={styles.checkbox}
                 value={isChecked4}
-                onValueChange={setChecked4}
+                onValueChange={()=>{isChecked4 ? setChecked4(false):setChecked4(true);isChecked4 ? setSubcategory("Semafor nefuncțional"): setSubcategory(""),console.log(subcategory)}}
                 color={isChecked4 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked2 || isChecked5 ? true : false}
                 />
@@ -75,7 +94,7 @@ export default function ProblemPage({navigation}){
                 <Checkbox
                 style={styles.checkbox}
                 value={isChecked5}
-                onValueChange={setChecked5}
+                onValueChange={()=>{isChecked5 ? setChecked5(false):setChecked5(true);isChecked5 ? setSubcategory("Semn rutier distrus/lipsă"): setSubcategory(""),console.log(subcategory)}}
                 color={isChecked5 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked4 || isChecked2 ? true : false}
                 />
@@ -100,7 +119,7 @@ export default function ProblemPage({navigation}){
                     value={longitude}
                     />
                 </View>
-            
+            <Text>{category} + {subcategory} + {lat} + {lon}</Text>
             <Pressable 
                 onPress={categoryHandler}
                 style = {styles.backButton}>
@@ -109,7 +128,7 @@ export default function ProblemPage({navigation}){
 
 
             <Pressable style = {styles.forwardButton}
-              onPress={addressHandler}>
+              onPress={submitCredentials}>
                 <Text style = {styles.buttonText}>postează</Text>
             </Pressable>
         

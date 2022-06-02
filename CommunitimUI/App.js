@@ -10,7 +10,7 @@ import ProblemPage from './src/screens/ProblemPage';
 import LightProblemPage from './src/screens/lightProblemPage';
 import OtherProblemPage from './src/screens/OtherProblemPage';
 import AddressPage from './src/screens/AddressPage';
-
+import MapPage from './src/screens/MapPage';
 const Stack = createStackNavigator();
 
 
@@ -30,7 +30,10 @@ export default function App() {
         name="screen_address"
         component={AddressPage}
        />
-         
+         <Stack.Screen 
+        name="screen_map"
+        component = {MapPage}
+       />
          <Stack.Screen
         name="screen_category"
         component={CategoryPage}

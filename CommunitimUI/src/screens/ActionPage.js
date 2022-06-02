@@ -7,6 +7,9 @@ export default function ActionPage({navigation}){
     const homepageHandler = () =>{
         navigation.navigate('screen_home')
     }
+    const mappageHandler = () =>{
+        navigation.navigate('screen_map')
+    }
 
     return(
         
@@ -18,6 +21,7 @@ export default function ActionPage({navigation}){
             </View>
             <View style={styles.body}>
                 <View style={styles.div1}>
+
                     <View style={styles.div1button1}>
                         <Pressable
                         onPress={categoryHandler}>
@@ -30,11 +34,13 @@ export default function ActionPage({navigation}){
                     </View>
 
                     <View style={styles.div1button2}>
+                        <Pressable onPress={mappageHandler}>
                         <Image 
                             style={styles.settings}
                             source={require('../utils/map.png')}
                         />
                         <Text style={styles.settingsText}>Vezi harta</Text>
+                        </Pressable>
                     </View>
 
                 </View>

@@ -2,9 +2,10 @@ import {StyleSheet, Text, TextInput, View, Pressable, Image, Dimensions, Button,
 import React, { useState } from 'react';
 import Checkbox from 'expo-checkbox';
 import CategoryPage from './CategoryPage';
-
+import axios from "axios";
 export default function OthertProblemPage({navigation}){
     const category = "Altele";
+    const [subcategory, setSubcategory] = useState("");
     const [isChecked1, setChecked1] = useState(false);
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);
@@ -18,6 +19,26 @@ export default function OthertProblemPage({navigation}){
         navigation.navigate('screen_address')
       }
 
+      const submitCredentials = async (event) =>{
+        try {
+          const response = await axios.post('http://192.168.0.213:8080/problems/add', {
+            category:category,
+            subcategory:subcategory,
+            latitude:latitude,
+            longitude:longitude
+          });
+          if (response.status === 200) {
+            alert("You have posted the problem succesfully.");
+          } else {
+            throw new Error("An error has occurred");
+          }
+        } catch (error) {
+          alert(error);
+        }
+      };
+      const lat=parseFloat(latitude);
+      const lon=parseFloat(longitude);
+
     return (
         <View style={styles.container}>
             <View>
@@ -29,8 +50,8 @@ export default function OthertProblemPage({navigation}){
             <View style={styles.section}>
                 <Checkbox
                 style={styles.checkbox}
+                onValueChange={()=>{isChecked1 ? setChecked1(false):setChecked1(true);isChecked1 ? setSubcategory("Capac de canal lipsa"): setSubcategory(""),console.log(subcategory)}}
                 value={isChecked1}
-                onValueChange={setChecked1}
                 color={isChecked1 ? "#9933ff" : undefined}
                 disabled = {isChecked2 || isChecked3 || isChecked4 ? true : false}
                 />
@@ -40,8 +61,8 @@ export default function OthertProblemPage({navigation}){
             <View style={styles.section}>
                 <Checkbox
                 style={styles.checkbox}
+                onValueChange={()=>{isChecked2 ? setChecked2(false):setChecked2(true);isChecked2 ? setSubcategory("Cade tencuiala"): setSubcategory(""),console.log(subcategory)}}
                 value={isChecked2}
-                onValueChange={setChecked2}
                 color={isChecked2 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked4 ? true : false}
                 />
@@ -51,8 +72,8 @@ export default function OthertProblemPage({navigation}){
             <View style={styles.section}>
                 <Checkbox
                 style={styles.checkbox}
+                onValueChange={()=>{isChecked3 ? setChecked3(false):setChecked3(true);isChecked3 ? setSubcategory("Trotuar spart"): setSubcategory(""),console.log(subcategory)}}
                 value={isChecked3}
-                onValueChange={setChecked3}
                 color={isChecked3 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked2 || isChecked4 ? true : false}
                 />
@@ -62,8 +83,8 @@ export default function OthertProblemPage({navigation}){
             <View style={styles.section}>
                 <Checkbox
                 style={styles.checkbox}
+                onValueChange={()=>{isChecked4 ? setChecked4(false):setChecked4(true);isChecked4 ? setSubcategory("Copac căzut"): setSubcategory(""),console.log(subcategory)}}
                 value={isChecked4}
-                onValueChange={setChecked4}
                 color={isChecked4 ? "#9933ff" : undefined}
                 disabled = {isChecked1 || isChecked3 || isChecked2 ? true : false}
                 />
@@ -97,7 +118,7 @@ export default function OthertProblemPage({navigation}){
 
 
             <Pressable style = {styles.forwardButton}
-            onPress={addressHandler}>
+            onPress={submitCredentials}>
                 <Text style = {styles.buttonText}>postează</Text>
             </Pressable>
         
