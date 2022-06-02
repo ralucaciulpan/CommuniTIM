@@ -4,6 +4,7 @@ import Checkbox from 'expo-checkbox';
 import CategoryPage from './CategoryPage';
 
 export default function LightProblemPage({navigation}){
+    const category = "Iluminare publica"
     const [isChecked1, setChecked1] = useState(false);
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);

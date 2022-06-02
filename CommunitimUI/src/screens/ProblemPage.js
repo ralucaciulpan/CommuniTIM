@@ -4,13 +4,14 @@ import Checkbox from 'expo-checkbox';
 import CategoryPage from './CategoryPage';
 
 export default function ProblemPage({navigation}){
+    const category = "Strazi";
     const [isChecked1, setChecked1] = useState(false);
     const [isChecked2, setChecked2] = useState(false);
     const [isChecked3, setChecked3] = useState(false);
     const [isChecked4, setChecked4] = useState(false);
     const [isChecked5, setChecked5] = useState(false);
     const [latitude,onChangeLatitude] = useState("");
-      const [longitude,onChangeLongitude] = useState("");
+    const [longitude,onChangeLongitude] = useState("");
     const categoryHandler = () =>{
         navigation.navigate('screen_category')
       }
